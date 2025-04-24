@@ -1,0 +1,19 @@
+category_id,category_name,parent_id,icon_path,icon_url
+1,Phones & Tablets,,icons/mobile.png,https://example.com/icons/mobile.png
+2,Phone Accessories,1,icons/phone-accessories.png,https://example.com/icons/phone-accessories.png
+3,Laptops & Computers,,icons/laptop.png,https://example.com/icons/laptop.png
+4,Home Appliances,,icons/home-appliances.png,https://example.com/icons/home-appliances.png
+5,Kitchenware,4,icons/kitchenware.png,https://example.com/icons/kitchenware.png
+6,Furniture,,icons/furniture.png,https://example.com/icons/furniture.png
+7,Fashion,,icons/fashion.png,https://example.com/icons/fashion.png
+8,Men Clothing,7,icons/men-clothing.png,https://example.com/icons/men-clothing.png
+9,Women Clothing,7,icons/women-clothing.png,https://example.com/icons/women-clothing.png
+10,Beauty & Personal Care,,icons/beauty.png,https://example.com/icons/beauty.png
+11,Skincare,10,icons/skincare.png,https://example.com/icons/skincare.png
+12,Health Supplements,,icons/health.png,https://example.com/icons/health.png
+13,Toys & Games,,icons/toys.png,https://example.com/icons/toys.png
+14,Educational Toys,13,icons/edu-toys.png,https://example.com/icons/edu-toys.png
+15,Sports Equipment,,icons/sports.png,https://example.com/icons/sports.png
+16,Outdoor Gear,15,icons/outdoor.png,https://example.com/icons/outdoor.png
+17,Groceries,,icons/groceries.png,https://example.com/icons/groceries.png
+18,Beverages,17,icons/beverages.png,https://example.com/icons/beverages.png
