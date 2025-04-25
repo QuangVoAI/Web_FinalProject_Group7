@@ -86,13 +86,14 @@ $products = $stmt ? $stmt->fetchAll(PDO::FETCH_ASSOC) : [];
         <div class="row product-grid">
         <?php foreach ($products as $product): ?>
             <?php
-            $imagePath = $product['image_path'] ?? 'img/product/default.jpg';
-            $imagePath = '/Final%20Project%20_Group07%20(22_4_2025)/public/' . ltrim($imagePath, '/');
-            $imagePath = str_replace(' ', '%20', $imagePath);             
+            $imageFile = $product['image_path'] ?? 'default.jpg';
+            $imagePath = 'http://localhost/Final%20Project%20_Group07%20(22_4_2025)/public/images/' . htmlspecialchars($imageFile);            
             ?>
+            <?php echo "<!-- DEBUG: " . $product['image_path'] . " -->"; ?>
             <div class="col-lg-3 col-md-4 col-sm-6 product-item">
                 <div class="product__item">
-                    <div class="product__item__pic set-bg" data-setbg="<?php echo $imagePath; ?>">
+                    <div class="product__item__pic set-bg"
+                        data-setbg="<?php echo $imagePath; ?>">
                         <ul class="product__item__pic__hover">
                             <li><a href="#"><i class="fa fa-heart"></i></a></li>
                             <li><a href="#"><i class="fa fa-retweet"></i></a></li>

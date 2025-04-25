@@ -5,7 +5,7 @@
             <div class="col-lg-3 col-md-6 col-sm-6">
                 <div class="footer__about">
                     <div class="footer__about__logo">
-                        <a href="/"><img src="/Final%20Project%20_Group07%20(22_4_2025)/public/img/logo.png" alt="Beezy Logo"></a>
+                        <a href="/"><img src="img/logo.png" alt="Beezy Logo"></a>
                     </div>
                     <ul>
                         <li>Address: District 7, Ho Chi Minh City</li>
@@ -62,7 +62,7 @@
                         </p>
                     </div>
                     <div class="footer__copyright__payment">
-                        <img src="/Final%20Project%20_Group07%20(22_4_2025)/public/img/payment-item.png" alt="Payment Methods">
+                        <img src="img/payment-item.png" alt="Payment Methods">
                     </div>
                 </div>
             </div>
@@ -72,16 +72,16 @@
 <!-- Footer Section End -->
 
 <!-- JavaScript -->
-<script src="/Final%20Project%20_Group07%20(22_4_2025)/public/js/jquery-3.3.1.min.js"></script>
-<script src="/Final%20Project%20_Group07%20(22_4_2025)/public/js/mixitup.min.js"></script>
-<script src="/Final%20Project%20_Group07%20(22_4_2025)/public/js/jquery.slicknav.js"></script>
-<script src="/Final%20Project%20_Group07%20(22_4_2025)/public/js/popper.min.js"></script>
-<script src="/Final%20Project%20_Group07%20(22_4_2025)/public/js/bootstrap.min.js"></script>
-<script src="/Final%20Project%20_Group07%20(22_4_2025)/public/js/jquery-ui.min.js"></script>
-<script src="/Final%20Project%20_Group07%20(22_4_2025)/public/js/jquery.nice-select.min.js"></script>
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/mixitup.min.js"></script>
+<script src="js/jquery.slicknav.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery-ui.min.js"></script>
+<script src="js/jquery.nice-select.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
-<script src="/Final%20Project%20_Group07%20(22_4_2025)/public/js/owl.carousel.min.js"></script>
-<script src="/Final%20Project%20_Group07%20(22_4_2025)/public/js/main.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/main.js"></script>
 
 </body>
 </html>
