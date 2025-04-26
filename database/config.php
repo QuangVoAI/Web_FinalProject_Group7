@@ -11,7 +11,7 @@ try {
     $conn = new PDO("mysql:host=" . HOST . ";dbname=" . DATABASE, USERNAME, PASSWORD);
     // Cấu hình PDO để ném ra lỗi khi có vấn đề
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-    echo "Kết nối thành công!";
+    // echo "Kết nối thành công!";
 } catch (PDOException $e) {
     echo "Lỗi kết nối: " . $e->getMessage();
 }

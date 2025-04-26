@@ -5,8 +5,8 @@ include_once __DIR__ . '/layout/header_content.php';
 
     <!-- Page Preloder -->
     <div id="preloder">
-        <div class="loader"></div>
-    </div>
+    <div class="loader"></div>
+</div>
 
     <!-- Hero Section Begin -->
     <section class="hero hero-normal">
