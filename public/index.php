@@ -4,7 +4,9 @@ ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 
 // Khởi động session
-session_start();
+if (session_status() == PHP_SESSION_NONE) {
+    session_start();
+}
 
 // Định nghĩa hằng số cho đường dẫn
 define('BASE_PATH', dirname(__DIR__));
@@ -14,6 +16,16 @@ require_once BASE_PATH . '/app/controllers/HomeController.php';
 
 // Lấy tham số từ URL
 $page = isset($_GET['page']) ? $_GET['page'] : 'index';
+
+// 🎯 CÁCH CHẶN ĐÚNG:
+
+// Các trang yêu cầu phải login
+$mustLoginPages = ['cart', 'checkout', 'account', 'shopping_cart'];
+
+if (in_array($page, $mustLoginPages) && empty($_SESSION['user_id'])) {
+    header("Location: index.php?page=login");
+    exit();
+}
 
 // Khởi tạo controller
 $controller = new HomeController();
@@ -26,7 +38,7 @@ switch ($page) {
     case 'cart':
         $controller->cart();
         break;
-    case 'checkout': 
+    case 'checkout':
         $controller->checkout();
         break;
     case 'shop_grid':
@@ -41,10 +53,10 @@ switch ($page) {
     case 'signup':
         $controller->signup();
         break;
-    case 'account': 
+    case 'account':
         $controller->account();
         break;
-    case 'logout': 
+    case 'logout':
         session_destroy();
         header("Location: index.php?page=index");
         exit();
